@@ -21,8 +21,9 @@ DeepSlides uses a number of open source projects to work properly:
 - Draw the possitive and negative cells with green and red colors respectively.
 - Also you can use yellow color to represent possitive cells with staining problem.
 - Run createTissue.py --scale_size  **image size (256*n)** 
-**note: Please be sure that images sizes are same in that folder.**
-**note: Please be sure that the annotated cells' area are realistic for 40x magnification**
+
+- **note: Please be sure that images sizes are same in that folder.**
+- **note: Please be sure that the annotated cells' area are realistic for 40x magnification**
 ##### example image:
 
 ![input mask](images/input.png)
