@@ -15,7 +15,7 @@ DeepSlides uses a number of open source projects to work properly:
 * [Numpy] 
 
 ### How to use:
-- Download and unzip trained [network](https://doi.org/10.5281/zenodo.1184644)  for ki67 stained breast cancer. (to "code\artificialKi67")
+- Download and unzip trained [network](https://doi.org/10.5281/zenodo.1200915)  for ki67 stained breast cancer. (to "code\artificialKi67")
 - Please create a png file. (\Testdata\xxx.png)
 - The size of the square image should be 256\*n X 256\*n where n=1,2,3,...
 - Draw the possitive and negative cells with green and red colors respectively.
