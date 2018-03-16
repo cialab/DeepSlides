@@ -8,12 +8,15 @@ import os
 import glob
 from scipy.misc import imread
 from  models import create_generator
+import argparse
 #version 2.0 generated on 3/16/2018
 
 sess = tf.InteractiveSession()
 debug=True
 
-
+parser = argparse.ArgumentParser()
+parser.add_argument("--scale_size", type=float, default=1280, help="weight on GAN term for generator gradient")
+a = parser.parse_args()
 
 def readImage(imgpath):
     img=imread(imgpath)
@@ -44,7 +47,7 @@ def analyze(imgpath,model,inputs,patchSize):
 def main():
     searchPath="Testdata/*.png"
     #Please use same patchsize for all images.
-    patchSize=1280
+    patchSize=a.scale_size
     inputs = tf.placeholder(tf.float32, [1, patchSize, patchSize, 3])
     with tf.variable_scope("generator") as scope:
         out_channels = 3
