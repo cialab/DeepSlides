@@ -2,7 +2,7 @@
 
 
 
-In pathology, Immunohistochemical staining (IHC) of tissue sections is regularly used to diagnose and grade malignant tumors. Typically, IHC stain interpretation is rendered by a trained pathologist using a manual method, which consists of counting each positively- and negatively-stained cell under a microscope. The manual enumeration suffers from poor reproducibility even in the hands of expert pathologists. To facilitate this process, we propose a novel method to create artificial datasets with the known ground truth which allows us to analyze the recall, precision, accuracy, and intra- and inter-observer variability in a systematic manner,  enabling us to compare different computer analysis approaches. Our method employs a conditional Generative Adversarial Network that uses a database of Ki67 stained tissues of breast cancer patients to generate synthetic digital slides.
+
 
 This study is based on [Tensorflow implementation](https://github.com/affinelayer/pix2pix-tensorflow) of [pix2pix](https://phillipi.github.io/pix2pix/). 
 
